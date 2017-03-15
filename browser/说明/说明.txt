@@ -1,0 +1,21 @@
+﻿依赖
+	包括:selenium-java-2.41.0-srcs.jar
+	    selenium-java-2.41.0.jar
+	    selenium-server-standalone-2.44.0.jar 
+	          【以上3个selenium的jar均属于selenium 2.x版本】
+	    json-20151123.jar
+	其他selenium高级功能如需其他依赖，请自行加入相关jar
+	
+browser文件夹内放置所有相关浏览器及其对应驱动exe文件,请放置在项目根目录下
+
+访问网页速度：htmlunit > phantomjs > Firefox、chrome、IE【不考虑带宽、并发数等其他条件】
+
+稳定性【加载js情况】：Firefox > phantomjs > htmlunit	; chrome、IE会因页面js的复杂情况出现不兼容情况 
+
+因chrome和ie相关驱动非selenium开发人员开发，存在某些不兼容情况，请尽量减少使用。
+
+phantomjs属于无界面浏览器；使用前请进行站点js稳定性测试。
+
+htmlunit属于内存型无界面浏览器；使用前请进行站点js稳定性测试。
+
+某些浏览器在关闭后仍存在相关进程未关闭的情况，请调用Driver.close(driver)连同进程一同关闭，以免消耗资源

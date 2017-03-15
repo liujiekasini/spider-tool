@@ -1,0 +1,1 @@
+Addon Installer for Firefox4.0

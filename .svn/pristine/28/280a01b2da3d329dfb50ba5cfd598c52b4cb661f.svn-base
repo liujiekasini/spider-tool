@@ -1,0 +1,10 @@
+driver_mysql=com.mysql.jdbc.Driver
+username_mysql=root
+password_mysql=ddinfomysql
+url_mysql=jdbc\:mysql\://localhost\:3306/dinfo_wenshu_hbase?useUnicode\=true&characterEncoding\=UTF-8
+
+hbase.zookeeper.quorum=115.182.234.84,115.182.234.85,115.182.234.86
+hbase.zookeeper.property.clientPort=2181
+
+url_solr=http://solr2.dinfo.com:2016/solr/judgmentInfo
+
